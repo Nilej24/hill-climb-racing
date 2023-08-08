@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cars:
   - {fileID: 8495498383777547179, guid: 8e851269e30f5f8428827c1bf7ca7c2c, type: 3}
+  - {fileID: 8495498383777547179, guid: c3e202c171b901f41b2d765034d0e52d, type: 3}

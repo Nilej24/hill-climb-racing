@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public CarPrefabs carPrefabs; 
     public CinemachineVirtualCamera vcam;
+    public CameraLookAhead cameraScript;
 
     private GameObject carPrefab;
     public GameObject playerCar;
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
 
         // give the car to the camera
         vcam.m_Follow = playerCar.transform;
+        cameraScript.car = playerCar.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

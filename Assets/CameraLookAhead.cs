@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CameraLookAhead : MonoBehaviour
 {
-    public GameManager game;
     public CinemachineVirtualCamera vcam;
     public Rigidbody2D car;
     public float expectedCarMaxSpeed = 25;
@@ -15,7 +14,7 @@ public class CameraLookAhead : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        car = game.playerCar.GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
