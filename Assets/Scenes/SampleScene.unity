@@ -2980,7 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f93f3effd7aff448e3192b2999253d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefabs: {fileID: 11400000, guid: 88d0ab8954af810448d02d882956146a, type: 2}
+  carList: {fileID: 11400000, guid: 4c338002abc12fb4c81eaef961b359e0, type: 2}
   vcam: {fileID: 264186341}
   cameraScript: {fileID: 264186343}
   playerCar: {fileID: 0}

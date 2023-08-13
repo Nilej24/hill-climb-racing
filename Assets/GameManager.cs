@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public CarPrefabs carPrefabs; 
+    public CarList carList; 
     public CinemachineVirtualCamera vcam;
     public CameraLookAhead cameraScript;
 
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
         // get player's selected car
         int carIndex = PlayerPrefs.GetInt("SelectedCar");
-        carPrefab = carPrefabs.cars[carIndex];
+        carPrefab = carList.cars[carIndex].prefab;
 
         // spawn the car
         playerCar = Instantiate(carPrefab, Vector3.zero, Quaternion.identity);
