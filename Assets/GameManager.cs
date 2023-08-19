@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("SelectedCar", 0);
-
         // get player's selected car
         int carIndex = PlayerPrefs.GetInt("SelectedCar");
         carPrefab = carList.cars[carIndex].prefab;

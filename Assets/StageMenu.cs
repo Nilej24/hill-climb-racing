@@ -16,11 +16,29 @@ public class StageMenu : MonoBehaviour
         displayStage(PlayerPrefs.GetInt("SelectedStage"));
     }
 
+    // used by button
     public void selectNextStage() {
-        
+
+        int stageNum = PlayerPrefs.GetInt("SelectedStage") + 1;
+
+        if (stageNum >= stageList.stages.Length)
+            stageNum = 0;
+
+        selectStage(stageNum);
+        displayStage(stageNum);
+
     }
 
+    // used by button
     public void selectPrevStage() {
+
+        int stageNum = PlayerPrefs.GetInt("SelectedStage") - 1;
+
+        if (stageNum < 0)
+            stageNum = stageList.stages.Length - 1;
+
+        selectStage(stageNum);
+        displayStage(stageNum);
         
     }
 

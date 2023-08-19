@@ -290,7 +290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 342013154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717415726}
+        m_TargetAssemblyTypeName: MenuSelector, Assembly-CSharp
+        m_MethodName: SelectStageMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &342013154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,8 +353,9 @@ GameObject:
   - component: {fileID: 785170729}
   - component: {fileID: 785170728}
   - component: {fileID: 785170727}
+  - component: {fileID: 785170730}
   m_Layer: 5
-  m_Name: Play Button
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +425,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 785170728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 785170730}
+        m_TargetAssemblyTypeName: StartButton, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &785170728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +476,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785170725}
   m_CullTransparentMesh: 1
+--- !u!114 &785170730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785170725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3757f2b2f648947b832ed2fc0d36ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageList: {fileID: 11400000, guid: 6ed661bbe4a176949ba2a260eadece0a, type: 2}
 --- !u!1 &800486031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageMenuPrefab: {fileID: 5666477357394886756, guid: a9c880f04fbabae4ebfec5727d28d1c1, type: 3}
-  carMenuPrefab: {fileID: 0}
+  carMenuPrefab: {fileID: 3578156599731806946, guid: 3a44f2c89d03ec24c97c4db6fa13d510, type: 3}
   bottomBarTransform: {fileID: 1858551894}
   stageButton: {fileID: 342013151}
   carButton: {fileID: 2063914729}
@@ -1204,7 +1242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2063914732}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1717415726}
+        m_TargetAssemblyTypeName: MenuSelector, Assembly-CSharp
+        m_MethodName: SelectCarMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2063914732
 MonoBehaviour:
   m_ObjectHideFlags: 0
