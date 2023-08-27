@@ -328,6 +328,7 @@ MonoBehaviour:
   wheelMaxSpeed: 5000
   rotateAccel: 2000
   rotateMaxSpeed: 100
+  downforceStrength: 200
 --- !u!235 &8495498383777547180
 WheelJoint2D:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class CarController : MonoBehaviour
     public float wheelMaxSpeed;
     public float rotateAccel;
     public float rotateMaxSpeed;
+    public float downforceStrength;
     private float direction;
 
     // Start is called before the first frame update
@@ -40,7 +41,37 @@ public class CarController : MonoBehaviour
             CalculateAppliedTorque(rotateAccel * -direction, rotateMaxSpeed, wholeCar) *
             Time.fixedDeltaTime
         );
+
+		wholeCar.AddForce(
+            CalculateDownforce(wholeCar.velocity, CalculateDirectionVector(wholeCar.rotation), downforceStrength) *
+            Time.fixedDeltaTime
+        );
 	}
+
+    private Vector2 CalculateDirectionVector(float rotation, float rotationToFaceRight=0) {
+
+        return new Vector2(
+            Mathf.Cos((rotation - rotationToFaceRight) * Mathf.Deg2Rad),
+            Mathf.Sin((rotation - rotationToFaceRight) * Mathf.Deg2Rad)
+        );
+
+    }
+
+    private Vector2 CalculateDownforce(Vector2 carVel, Vector2 carDirection, float multiplier) {
+
+        // skip all if multiplier is 0
+        if (multiplier == 0f) return Vector2.zero;
+        
+        // check how fast the car is travelling in the direction it's facing
+        float dfValue = Vector2.Dot(carVel, carDirection);
+
+        // no downforce backwards
+        if (dfValue <= 0) return Vector2.zero;
+
+        // calculate downforce
+        return Vector2.Perpendicular(carDirection) * dfValue * multiplier * -1;
+
+    }
 
     private float CalculateAppliedTorque(float torque, float maxAngVel, Rigidbody2D rigidbody) {
 
