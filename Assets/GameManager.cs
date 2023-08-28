@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     private GameObject carPrefab;
     public GameObject playerCar;
+
+    public TextMeshProUGUI timeTextbox;
+    private float time = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
+        UpdateTimeText();
+    }
+
+    void UpdateTimeText() {
         
+        timeTextbox.text = time.ToString("0.00");
+
     }
 }

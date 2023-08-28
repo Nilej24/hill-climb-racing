@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cars:
   - prefab: {fileID: 8495498383777547179, guid: 8e851269e30f5f8428827c1bf7ca7c2c, type: 3}
+    name: Lambo
+    image: {fileID: 2800000, guid: a390585b8288d6a4189fec1307797f75, type: 3}
+  - prefab: {fileID: 6656837370032090744, guid: 6a6a5ff809005eb4aadf2fce1ac7cf34, type: 3}
+    name: Ford
+    image: {fileID: 2800000, guid: 012aff8b1f312944bafe182da759b3b0, type: 3}
+  - prefab: {fileID: 8495498383777547179, guid: c3e202c171b901f41b2d765034d0e52d, type: 3}
     name: Paper Lambo
     image: {fileID: 2800000, guid: 27ac0fd2e7ffd1c42878cff99b115f8b, type: 3}
-  - prefab: {fileID: 8495498383777547179, guid: c3e202c171b901f41b2d765034d0e52d, type: 3}
-    name: Pre-Nerf Paper Lambo
-    image: {fileID: 2800000, guid: 27ac0fd2e7ffd1c42878cff99b115f8b, type: 3}
-  - prefab: {fileID: 8495498383777547179, guid: c3e202c171b901f41b2d765034d0e52d, type: 3}
-    name: literally just a wheel
-    image: {fileID: 2800000, guid: b7e25204a09eacd4d85a5c9b7f06daf2, type: 3}
