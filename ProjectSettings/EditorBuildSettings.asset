@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PaperGrass.unity
     guid: b12cf2f564a4d244d9de5850214844cf
+  - enabled: 1
+    path: Assets/Scenes/Rocks.unity
+    guid: cf0b97b61856cc546b4701aa60254112
   m_configObjects: {}

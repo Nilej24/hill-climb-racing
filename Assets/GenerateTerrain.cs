@@ -11,8 +11,8 @@ public class GenerateTerrain : MonoBehaviour
     public int terrainLength;
     [Range(0, 1)] public float terrainSmoothness;
     public float xMultiplier, yMultiplier;
-    public float bottomThickness;
     public float noiseStep, noiseY;
+    public float bottomThickness;
 
     void OnValidate()
     {

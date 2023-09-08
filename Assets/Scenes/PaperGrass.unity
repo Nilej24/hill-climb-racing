@@ -3034,9 +3034,9 @@ MonoBehaviour:
   terrainSmoothness: 0.341
   xMultiplier: 9.83
   yMultiplier: 39.18
-  bottomThickness: 0.53
   noiseStep: 0.53
   noiseY: -0.17
+  bottomThickness: 0.53
 --- !u!1 &1412730746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,8 +3189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -470, y: 217}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: -270.06778, y: 217}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1889542621
 MonoBehaviour:
