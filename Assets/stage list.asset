@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - sceneName: PaperGrass
-    name: Paper Grass
+    name: Grass
     image: {fileID: 2800000, guid: e31a4aef98b16c94b87326d1ef2073db, type: 3}
   - sceneName: Rocks
-    name: Bumps
+    name: Rocks
     image: {fileID: 2800000, guid: 27ac0fd2e7ffd1c42878cff99b115f8b, type: 3}

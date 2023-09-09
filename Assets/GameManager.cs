@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class GameManager : MonoBehaviour
     {
         time += Time.deltaTime;
         UpdateTimeText();
+
+        if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("MenuScreen");
+        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void UpdateTimeText() {
